@@ -41,3 +41,34 @@ Open the root folder in terminal and enter the following command:
 pytest app/tests/test_main.py
 ```
 This should run the tests and output if the tests passed or failed
+
+## Usage
+### Category API
+API List:
+### GET http://localhost:8000/api/categories
+### POST http://localhost:8000/api/categories
+### PUT http://localhost:8000/api/categories/1
+### DELETE http://localhost:8000/api/categories/1
+Create or update object payload
+```json
+{
+    "name": "Sample Category",
+    "description": "Description of a category"
+}
+```
+
+### Product API
+API List:
+### GET http://localhost:8000/api/products
+### POST http://localhost:8000/api/products
+### PUT http://localhost:8000/api/products/1
+### DELETE http://localhost:8000/api/products/1
+Create or update object payload
+```json
+{
+    "name": "Sample Product",
+    "description": "Description of a product",
+    "price": 100,
+    "category_id": 1
+}
+```
